@@ -1,0 +1,2 @@
+# cnst
+Go constants
