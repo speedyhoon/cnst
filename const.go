@@ -16,9 +16,12 @@ const (
 	XFrameOptions  = "x-frame-options"
 	Deny           = "deny"
 	Vary           = "vary"
-	MimeHTML       = "text/html; charset=utf-8"
-	MimeCSS        = "text/css; charset=utf-8"
-	MimeJS         = "text/javascript"
-	MimeSVG        = "image/svg+xml"
-	MimeWEBP       = "image/webp"
+
+	MimeHTML = "text/html; charset=utf-8"
+	MimeCSS  = "text/css; charset=utf-8"
+	MimeJS   = "text/javascript"
+	MimeJSON = "application/json"
+	MimePNG  = "image/png"
+	MimeSVG  = "image/svg+xml"
+	MimeWEBP = "image/webp"
 )
