@@ -17,10 +17,12 @@ cnst.MimeWEBP  = "image/webp"
 cnst.MimeWOFF2 = "font/woff2"
 ```
 
-## Example Usage:
+## Install:
 ```sh
 go get github.com/speedyhoon/cnst
 ```
+
+## Example Usage:
 ```go
 package main
 
@@ -81,8 +83,9 @@ func main() {
 	)
 	fmt.Printf("value: %d, name: %s, type: %[1]T\n", http.StatusTeapot, http.StatusText(http.StatusTeapot))
 }
-
-//Outputs:
+```
+Outputs:
+```
 GET HEAD POST PUT PATCH DELETE CONNECT OPTIONS TRACE
 value: 418, name: I'm a teapot, type: int
 ```
