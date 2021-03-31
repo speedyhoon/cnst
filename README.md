@@ -47,7 +47,7 @@ func main() {
 			w.Header().Set(cnst.Vary, cnst.AcceptEncoding)
 
 			//Serve file with Brotli compression
-			w.Header().Set(cnst.ContentEncode, cnst.Brotli)
+			w.Header().Set(cnst.ContentEncoding, cnst.Brotli)
 			http.FileServer(http.Dir(dirCSS)).ServeHTTP(w, r)
 		})
 	http.ListenAndServe(":", nil)
@@ -56,6 +56,8 @@ func main() {
 \
 \
 \
+HTTP Methods (`GET`, `POST`, etc) are already constants defined in [package `net/http`](https://golang.org/src/net/http/method.go)
+
 HTTP Status codes 100 - 511 are already constants defined in [package `net/http`](https://golang.org/src/net/http/status.go)
 ```go
 package main
@@ -66,8 +68,21 @@ import (
 )
 
 func main() {
-	fmt.Printf("value: %d, name: %s, type: %T", http.StatusTeapot, http.StatusText(http.StatusTeapot), http.StatusTeapot)
+	fmt.Println(
+		http.MethodGet,
+		http.MethodHead,
+		http.MethodPost,
+		http.MethodPut,
+		http.MethodPatch,
+		http.MethodDelete,
+		http.MethodConnect,
+		http.MethodOptions,
+		http.MethodTrace,
+	)
+	fmt.Printf("value: %d, name: %s, type: %[1]T\n", http.StatusTeapot, http.StatusText(http.StatusTeapot))
 }
 
-//Outputs: value: 418, name: I'm a teapot, type: int
+//Outputs:
+GET HEAD POST PUT PATCH DELETE CONNECT OPTIONS TRACE
+value: 418, name: I'm a teapot, type: int
 ```
