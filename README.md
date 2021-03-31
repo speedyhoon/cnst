@@ -1,12 +1,7 @@
 # cnst
 [![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/cnst)](https://goreportcard.com/report/github.com/speedyhoon/cnst)
 
-Go string constants for [HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) and [Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
-```go
-cnst.Get  = "GET"
-cnst.Post = "POST"
-cnst.Put  = "PUT"
-```
+Go string constants for [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) and [Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
 
 ```go
 cnst.AcceptEncoding = "accept-encoding"
@@ -17,7 +12,7 @@ MIME Types are for use in the HTTP Content-Type header and contain a UTF-8 chars
 ```go
 cnst.MimeCSS   = "text/css; charset=utf8"
 cnst.MimeHTM   = "text/html; charset=utf8"
-cnst.MimeMJS   = "text/javascript"
+cnst.MimeJS    = "text/javascript"
 cnst.MimeWEBM  = "video/webm"
 cnst.MimeWEBP  = "image/webp"
 cnst.MimeWOFF2 = "font/woff2"
@@ -53,7 +48,7 @@ func main() {
 			w.Header().Set(cnst.Vary, cnst.AcceptEncoding)
 
 			//Serve file with Brotli compression
-			w.Header().Set(cnst.ContentEncode, cnst.Brotli)
+			w.Header().Set(cnst.ContentEncoding, cnst.Brotli)
 			http.FileServer(http.Dir(dirCSS)).ServeHTTP(w, r)
 		})
 	http.ListenAndServe(":", nil)
@@ -62,7 +57,9 @@ func main() {
 \
 \
 \
-HTTP Status codes 100 - 511 are already constants defined in [package `net/http`](https://golang.org/src/net/http/status.go)
+HTTP Methods (`GET`, `POST`, etc) are already constants defined in [package `net/http`](https://golang.org/src/net/http/status.go)
+
+HTTP Status codes 100 - 511 are already constants defined in [package `net/http`](https://golang.org/src/net/http/method.go)
 ```go
 package main
 
@@ -72,8 +69,21 @@ import (
 )
 
 func main() {
-	fmt.Printf("value: %d, name: %s, type: %T", http.StatusTeapot, http.StatusText(http.StatusTeapot), http.StatusTeapot)
+	fmt.Println(
+		http.MethodGet,
+		http.MethodHead,
+		http.MethodPost,
+		http.MethodPut,
+		http.MethodPatch,
+		http.MethodDelete,
+		http.MethodConnect,
+		http.MethodOptions,
+		http.MethodTrace,
+	)
+	fmt.Printf("value: %d, name: %s, type: %[1]T\n", http.StatusTeapot, http.StatusText(http.StatusTeapot))
 }
 
-//Outputs: value: 418, name: I'm a teapot, type: int
+//Outputs:
+GET HEAD POST PUT PATCH DELETE CONNECT OPTIONS TRACE
+value: 418, name: I'm a teapot, type: int
 ```
