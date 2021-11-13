@@ -1,7 +1,17 @@
 # Go Constants `cnst`
+
 [![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/cnst)](https://goreportcard.com/report/github.com/speedyhoon/cnst)
 
-Go string constants for [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) and [Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
+Go string constants for [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+and [Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
+
+## Install:
+
+```sh
+go get github.com/speedyhoon/cnst
+```
+
+## Examples:
 
 ```go
 package main
@@ -19,25 +29,27 @@ func main() {
 ```
 
 MIME Types are for use in the HTTP Content-Type header and contain a UTF-8 charset where appropriate.
-```go
-cnst.MimeCSS   = "text/css; charset=utf8"
-cnst.MimeHTM   = "text/html; charset=utf8"
-cnst.MimeJS    = "text/javascript"
-cnst.MimeWEBM  = "video/webm"
-cnst.MimeWEBP  = "image/webp"
-cnst.MimeWOFF2 = "font/woff2"
-```
 
-## Install:
-```sh
-go get github.com/speedyhoon/cnst
-```
-
-## Example Usage:
 ```go
 package main
 
 import (
+	"fmt"
+
+	"github.com/speedyhoon/cnst/mime"
+)
+
+func main() {
+	fmt.Println(mime.CSS, mime.HTML, mime.JS, mime.WEBMv, mime.WEBP, mime.WOFF2)
+	// "text/css; charset=utf8" "text/html; charset=utf8" "text/javascript" "video/webm" "image/webp" "font/woff2"
+}
+```
+
+```go
+package main
+
+import (
+	"fmt"
 	"log"
 	"net/http"
 	"path/filepath"
@@ -45,23 +57,23 @@ import (
 
 	"github.com/speedyhoon/cnst"
 	"github.com/speedyhoon/cnst/hdr"
+	"github.com/speedyhoon/cnst/mime"
 	"github.com/speedyhoon/utl"
 )
 
 func main() {
 	dirCSS := filepath.Join(utl.Cwd(), "css")
+	cacheControl := fmt.Sprintf("public, max-age=%d", int((time.Hour * 24 * 365).Seconds()))
 
 	http.HandleFunc("/css/",
 		func(w http.ResponseWriter, r *http.Request) {
-			w.Header().Set(hdr.ContentType, cnst.MimeCSS)
+			// CSS content with UTF-8 encoding.
+			w.Header().Set(hdr.ContentType, mime.CSS)
 
-			//Cache headers:
-			w.Header().Set(hdr.CacheControl, "public")
-			//Cache expires in 1 year
-			w.Header().Set(hdr.Expires, time.Now().UTC().AddDate(1, 0, 0).Format("Mon, 02 Jan 2006 15:04:05 GMT"))
-			w.Header().Set(hdr.Vary, hdr.AcceptEncoding)
+			// Cache expires in 1 year.
+			w.Header().Set(hdr.CacheControl, cacheControl)
 
-			//Serve file with Brotli compression
+			// Serve file with Brotli compression.
 			w.Header().Set(hdr.ContentEncoding, cnst.Brotli)
 			http.FileServer(http.Dir(dirCSS)).ServeHTTP(w, r)
 		})
@@ -73,14 +85,15 @@ func main() {
 }
 ```
 
-\
-\
-\
-HTTP Methods (`GET`, `POST`, etc.) are already constants defined
-in [package `net/http`](https://golang.org/src/net/http/method.go)
+# Go standard library constants
 
-HTTP Status codes 100 - 511 are already constants defined
-in [package `net/http`](https://golang.org/src/net/http/status.go)
+All HTTP Methods (`GET`, `POST`, etc.) are defined in [`net/http`](https://golang.org/src/net/http/method.go).
+
+All HTTP Status codes are defined in [`net/http`](https://golang.org/src/net/http/status.go).
+
+Dynamic CPU Word size constants are defined in packages [`strconv`](https://golang.org/src/strconv/atoi.go)
+and [`math/bits`](https://golang.org/src/math/bits/bits.go)
+
 ```go
 package main
 
