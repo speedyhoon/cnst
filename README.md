@@ -53,13 +53,18 @@ func main() {
 			w.Header().Set(cnst.ContentEncoding, cnst.Brotli)
 			http.FileServer(http.Dir(dirCSS)).ServeHTTP(w, r)
 		})
-	http.ListenAndServe(":", nil)
+
+	err := http.ListenAndServe(":", nil)
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
 ```
 \
 \
 \
-HTTP Methods (`GET`, `POST`, etc) are already constants defined in [package `net/http`](https://golang.org/src/net/http/status.go)
+HTTP Methods (`GET`, `POST`, etc.) are already constants defined
+in [package `net/http`](https://golang.org/src/net/http/status.go)
 
 HTTP Status codes 100 - 511 are already constants defined in [package `net/http`](https://golang.org/src/net/http/method.go)
 ```go
@@ -67,7 +72,9 @@ package main
 
 import (
 	"fmt"
+	"math/bits"
 	"net/http"
+	"strconv"
 )
 
 func main() {
@@ -82,6 +89,7 @@ func main() {
 		http.MethodOptions,
 		http.MethodTrace,
 	)
+	fmt.Println("CPU Word size:", strconv.IntSize, "bits or", bits.UintSize, "bits")
 	fmt.Printf("value: %d, name: %s, type: %[1]T\n", http.StatusTeapot, http.StatusText(http.StatusTeapot))
 }
 ```
