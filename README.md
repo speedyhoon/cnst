@@ -2,6 +2,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/cnst)](https://goreportcard.com/report/github.com/speedyhoon/cnst)
 
 Go string constants for [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) and [Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
+
 ```go
 cnst.AcceptEncoding = "accept-encoding"
 cnst.ContentType    = "content-type"
@@ -27,6 +28,7 @@ go get github.com/speedyhoon/cnst
 package main
 
 import (
+	"log"
 	"net/http"
 	"path/filepath"
 	"time"
@@ -52,13 +54,18 @@ func main() {
 			w.Header().Set(cnst.ContentEncoding, cnst.Brotli)
 			http.FileServer(http.Dir(dirCSS)).ServeHTTP(w, r)
 		})
-	http.ListenAndServe(":", nil)
+
+	err := http.ListenAndServe(":", nil)
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
 ```
 \
 \
 \
-HTTP Methods (`GET`, `POST`, etc) are already constants defined in [package `net/http`](https://golang.org/src/net/http/method.go)
+HTTP Methods (`GET`, `POST`, etc) are already constants defined
+in [package `net/http`](https://golang.org/src/net/http/method.go)
 
 HTTP Status codes 100 - 511 are already constants defined in [package `net/http`](https://golang.org/src/net/http/status.go)
 ```go
@@ -66,7 +73,9 @@ package main
 
 import (
 	"fmt"
+	"math/bits"
 	"net/http"
+	"strconv"
 )
 
 func main() {
@@ -81,11 +90,13 @@ func main() {
 		http.MethodOptions,
 		http.MethodTrace,
 	)
+	fmt.Println("CPU Word size:", strconv.IntSize, "bits or", bits.UintSize, "bits")
 	fmt.Printf("value: %d, name: %s, type: %[1]T\n", http.StatusTeapot, http.StatusText(http.StatusTeapot))
 }
 ```
 Outputs:
 ```
 GET HEAD POST PUT PATCH DELETE CONNECT OPTIONS TRACE
+CPU Word size: 64 bits or 64 bits
 value: 418, name: I'm a teapot, type: int
 ```
