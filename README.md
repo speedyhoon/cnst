@@ -1,11 +1,21 @@
-# cnst
+# Go Constants `cnst`
 [![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/cnst)](https://goreportcard.com/report/github.com/speedyhoon/cnst)
 
 Go string constants for [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) and [Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
 
 ```go
-cnst.AcceptEncoding = "accept-encoding"
-cnst.ContentType    = "content-type"
+package main
+
+import (
+	"fmt"
+	
+	"github.com/speedyhoon/cnst/hdrs"
+)
+
+func main() {
+	fmt.Println(hdrs.AcceptEncoding, hdrs.ContentType)
+	// "accept-encoding" "content-type"
+}
 ```
 
 MIME Types are for use in the HTTP Content-Type header and contain a UTF-8 charset where appropriate.
@@ -28,11 +38,13 @@ go get github.com/speedyhoon/cnst
 package main
 
 import (
+	"log"
 	"net/http"
 	"path/filepath"
 	"time"
 
 	"github.com/speedyhoon/cnst"
+	"github.com/speedyhoon/cnst/hdrs"
 	"github.com/speedyhoon/utl"
 )
 
@@ -41,16 +53,16 @@ func main() {
 
 	http.HandleFunc("/css/",
 		func(w http.ResponseWriter, r *http.Request) {
-			w.Header().Set(cnst.ContentType, cnst.MimeCSS)
+			w.Header().Set(hdrs.ContentType, cnst.MimeCSS)
 
 			//Cache headers:
-			w.Header().Set(cnst.CacheControl, "public")
+			w.Header().Set(hdrs.CacheControl, "public")
 			//Cache expires in 1 year
-			w.Header().Set(cnst.Expires, time.Now().UTC().AddDate(1, 0, 0).Format("Mon, 02 Jan 2006 15:04:05 GMT"))
-			w.Header().Set(cnst.Vary, cnst.AcceptEncoding)
+			w.Header().Set(hdrs.Expires, time.Now().UTC().AddDate(1, 0, 0).Format("Mon, 02 Jan 2006 15:04:05 GMT"))
+			w.Header().Set(hdrs.Vary, hdrs.AcceptEncoding)
 
 			//Serve file with Brotli compression
-			w.Header().Set(cnst.ContentEncoding, cnst.Brotli)
+			w.Header().Set(hdrs.ContentEncoding, cnst.Brotli)
 			http.FileServer(http.Dir(dirCSS)).ServeHTTP(w, r)
 		})
 
@@ -60,13 +72,15 @@ func main() {
 	}
 }
 ```
+
 \
 \
 \
 HTTP Methods (`GET`, `POST`, etc.) are already constants defined
 in [package `net/http`](https://golang.org/src/net/http/status.go)
 
-HTTP Status codes 100 - 511 are already constants defined in [package `net/http`](https://golang.org/src/net/http/method.go)
+HTTP Status codes 100 - 511 are already constants defined
+in [package `net/http`](https://golang.org/src/net/http/method.go)
 ```go
 package main
 
