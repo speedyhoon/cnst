@@ -1,6 +1,6 @@
-package cnst
+package hdr
 
-// HTTP Headers developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+// HTTP Headers reference: developer.mozilla.org/en-US/docs/Web/HTTP/Headers
 const (
 	AcceptCHLifetime              = "accept-ch-lifetime"
 	AcceptCH                      = "accept-ch"
