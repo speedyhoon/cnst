@@ -16,15 +16,11 @@ go get github.com/speedyhoon/cnst
 ```go
 package main
 
-import (
-	"fmt"
-	
-	"github.com/speedyhoon/cnst/hdr"
-)
+import "github.com/speedyhoon/cnst/hdr"
 
 func main() {
-	fmt.Println(hdr.AcceptEncoding, hdr.ContentType)
-	// "accept-encoding" "content-type"
+	println(hdr.AcceptEncoding, hdr.ContentType, hdr.CSP)
+	// "accept-encoding" "content-type" "content-security-policy"
 }
 ```
 
@@ -33,14 +29,10 @@ MIME Types are for use in the HTTP Content-Type header and contain a UTF-8 chars
 ```go
 package main
 
-import (
-	"fmt"
-
-	"github.com/speedyhoon/cnst/mime"
-)
+import "github.com/speedyhoon/cnst/mime"
 
 func main() {
-	fmt.Println(mime.CSS, mime.HTML, mime.JS, mime.WEBMv, mime.WEBP, mime.WOFF2)
+	println(mime.CSS, mime.HTML, mime.JS, mime.WEBMv, mime.WEBP, mime.WOFF2)
 	// "text/css; charset=utf8" "text/html; charset=utf8" "text/javascript" "video/webm" "image/webp" "font/woff2"
 }
 ```
