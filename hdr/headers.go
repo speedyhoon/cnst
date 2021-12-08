@@ -1,6 +1,6 @@
-// Package hdrs defines HTTP Headers. Reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+// Package hdr defines HTTP Headers. Reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
 // Deprecated, experimental, obsolete or non-standard HTTP Headers have not been included.
-package hdrs
+package hdr
 
 const (
 	AcceptCHLifetime              = "accept-ch-lifetime"
