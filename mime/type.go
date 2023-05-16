@@ -6,7 +6,7 @@
 package mime
 
 const (
-	charset = "; charset=utf8"
+	charset = "; charset=utf-8"
 
 	A3GP  = "audio/3gpp"
 	V3GP  = "video/3gpp"
