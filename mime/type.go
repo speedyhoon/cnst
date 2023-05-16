@@ -37,7 +37,7 @@ const (
 	ICS    = "text/calendar"
 	JAR    = "application/java-archive"
 	JPG    = "image/jpeg"
-	JS     = "text/javascript"
+	JS     = "text/javascript" + charset
 	JSON   = "application/json"
 	JSONLD = "application/ld+json"
 	MID    = "audio/midi"
