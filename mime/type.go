@@ -80,8 +80,8 @@ const (
 	XHTML  = "application/xhtml+xml"
 	XLS    = "application/vnd.ms-excel"
 	XLSX   = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-	XML    = "text/xml"        //if readable from casual users (RFC 3023, section 3)
-	XMLA   = "application/xml" //if not readable from casual users (RFC 3023, section 3)
+	XML    = "text/xml"        // If readable from casual users (RFC 3023, section 3)
+	XMLA   = "application/xml" // If not readable from casual users (RFC 3023, section 3)
 	XUL    = "application/vnd.mozilla.xul+xml"
 	ZIP    = "application/zip"
 	ZIP7   = "application/x-7z-compressed"
