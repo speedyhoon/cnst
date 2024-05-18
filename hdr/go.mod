@@ -1,3 +1,3 @@
 module github.com/speedyhoon/cnst/hdr
 
-go 1.17
+go 1.11
