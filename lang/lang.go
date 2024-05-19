@@ -206,30 +206,30 @@ const (
 
 	Norwegian = "no          nb-NO"
 
-	NorthernSothoSouthAfrica = "ns-ZA       ns-ZA"
+	NorthernSothoSouthAfrica = "ns-ZA"
 
-	Punjabi      = "pa          pa-IN"
-	PunjabiIndia = "pa-IN       pa-IN"
+	Punjabi      = "pa"
+	PunjabiIndia = "pa-IN"
 
-	Polish       = "pl          pl-PL"
-	PolishPoland = "pl-PL       pl-PL"
+	Polish       = "pl"
+	PolishPoland = "pl-PL"
 
-	Portuguese         = "pt          pt-BR"
-	PortugueseBrazil   = "pt-BR       pt-BR"
-	PortuguesePortugal = "pt-PT       pt-PT"
+	Portuguese         = "pt"
+	PortugueseBrazil   = "pt-BR"
+	PortuguesePortugal = "pt-PT"
 
-	QuechuaBolivia = "quz-BO      quz-B"
-	QuechuaEcuador = "quz-EC      quz-E"
-	QuechuaPeru    = "quz-PE      quz-P"
+	QuechuaBolivia = "quz-BO"
+	QuechuaEcuador = "quz-EC"
+	QuechuaPeru    = "quz-PE"
 
-	Romanian        = "ro          ro-RO"
-	RomanianRomania = "ro-RO       ro-RO"
+	Romanian        = "ro"
+	RomanianRomania = "ro-RO"
 
-	Russian       = "ru          ru-RU"
-	RussianRussia = "ru-RU       ru-RU"
+	Russian       = "ru"
+	RussianRussia = "ru-RU"
 
-	Sanskrit      = "sa          sa-IN"
-	SanskritIndia = "sa-IN       sa-IN"
+	Sanskrit      = "sa"
+	SanskritIndia = "sa-IN"
 
 	SamiNorthernFinland = "se-FI"
 	SamiNorthernNorway  = "se-NO"
