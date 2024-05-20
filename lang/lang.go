@@ -3,7 +3,7 @@ package lang
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
 // https://gist.github.com/JamieMason/3748498
 const (
-	Afrikaans            = "af-ZA"
+	Afrikaans            = "af"
 	AfrikaansSouthAfrica = "af-ZA"
 
 	Amharic = "am" // Ethiopian Semitic.
