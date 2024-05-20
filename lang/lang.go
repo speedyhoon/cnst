@@ -74,6 +74,8 @@ const (
 	GermanLiechtenstein = "de-LI"
 	GermanLuxembourg    = "de-LU"
 
+	LowerSorbian = "dsb" // Lower Lusatia (Germany).
+
 	Divehi         = "dv"
 	DivehiMaldives = "dv-MV"
 
@@ -255,7 +257,11 @@ const (
 	Maltese      = "mt"
 	MalteseMalta = "mt-MT"
 
+	Burmese = "my"
+
 	NorwegianNorway = "nb-NO" // Bokmal
+
+	Nepali = "ne"
 
 	Dutch            = "nl"
 	DutchBelgium     = "nl-BE"
@@ -265,6 +271,7 @@ const (
 
 	Norwegian = "no          nb-NO"
 
+	NorthernSotho            = "ns"
 	NorthernSothoSouthAfrica = "ns-ZA"
 
 	Occitan = "oc"
@@ -324,10 +331,16 @@ const (
 	SamiSouthern       = "sma"
 	SamiSouthernNorway = "sma-NO"
 	SamiSouthernSweden = "sma-SE"
-	SamiLuleNorway     = "smj-NO"
-	SamiLuleSweden     = "smj-SE"
-	SamiInariFinland   = "smn-FI"
-	SamiSkoltFinland   = "sms-FI"
+
+	SamiLule       = "smj"
+	SamiLuleNorway = "smj-NO"
+	SamiLuleSweden = "smj-SE"
+
+	SamiInari        = "smn"
+	SamiInariFinland = "smn-FI"
+
+	SamiSkolt        = "sms"
+	SamiSkoltFinland = "sms-FI"
 
 	Albanian        = "sq"
 	AlbanianAlbania = "sq-AL"
@@ -395,6 +408,9 @@ const (
 	Xhosa            = "xh"
 	XhosaSouthAfrica = "xh-ZA"
 
+	Yoruba = "yo"
+
+	Chinese                     = "zh"
 	ChinesePeoplesRepublicChina = "zh-CN"
 	ChineseHongKongSAR          = "zh-HK"
 	ChineseSimplified           = "zh-CHS"
