@@ -6,6 +6,8 @@ const (
 	Afrikaans            = "af-ZA"
 	AfrikaansSouthAfrica = "af-ZA"
 
+	Amharic = "am" // Ethiopian Semitic.
+
 	Arabic            = "ar"
 	ArabicUAE         = "ar-AE"
 	ArabicBahrain     = "ar-BH"
@@ -24,9 +26,19 @@ const (
 	ArabicTunisia     = "ar-TN"
 	ArabicYemen       = "ar-YE"
 
+	Mapudungun = "arn" // South-central Chile & west-central Argentina by the Mapuche people.
+
+	Assamese = "as" // North-eastern Indian state of Assam.
+
 	Azeri                   = "az"
 	AzeriCyrillicAzerbaijan = "az-Cyrl-AZ"
 	AzeriLatinAzerbaijan    = "az-Latn-AZ"
+
+	Bashkir = "ba" // Russia, Ukraine, Belarus, Kazakhstan, Uzbekistan, Estonia.
+
+	Bangla           = "bn"
+	BanglaBangladesh = "bn-BD"
+	BanglaIndia      = "bn-IN"
 
 	Belarusian        = "be"
 	BelarusianBelarus = "be-BY"
@@ -34,14 +46,22 @@ const (
 	Bulgarian         = "bg"
 	BulgarianBulgaria = "bg-BG"
 
+	Tibetan = "bo"
+
+	Breton = "br"
+
+	Bosnian                  = "bs"
 	BosnianBosniaHerzegovina = "bs-Latn-BA"
 
 	Catalan        = "ca"
 	CatalanCatalan = "ca-ES"
 
+	Corsican = "co"
+
 	Czech              = "cs"
 	CzechCzechRepublic = "cs-CZ"
 
+	Welsh              = "cy"
 	WelshUnitedKingdom = "cy-GB"
 
 	Danish        = "da"
@@ -96,6 +116,7 @@ const (
 	SpanishParaguay          = "es-PY"
 	SpanishElSalvador        = "es-SV"
 	SpanishUruguay           = "es-UY"
+	SpanishUSA               = "es-US"
 	SpanishVenezuela         = "es-VE"
 
 	Estonian        = "et"
@@ -106,6 +127,8 @@ const (
 
 	Persian     = "fa"
 	PersianIran = "fa-IR"
+
+	Filipino = "fil"
 
 	Finnish        = "fi"
 	FinnishFinland = "fi-FI"
@@ -121,17 +144,30 @@ const (
 	FrenchLuxembourg  = "fr-LU"
 	FrenchMonaco      = "fr-MC"
 
+	Frisian = "fy"
+
+	Irish = "ga"
+
+	ScottishGaelic = "gd"
+
 	Galician         = "gl"
 	GalicianGalician = "gl-ES"
 
+	SwissGerman = "gsw"
+
 	Gujarati      = "gu"
 	GujaratiIndia = "gu-IN"
+
+	Hausa = "ha"
 
 	Hebrew       = "he"
 	HebrewIsrael = "he-IL"
 
 	Hindi      = "hi"
 	HindiIndia = "hi-IN"
+
+	SerboCroatian = "hrv"
+	UpperSorbian  = "hsb"
 
 	Croatian                  = "hr"
 	CroatianBosniaHerzegovina = "hr-BA"
@@ -146,6 +182,10 @@ const (
 	Indonesian          = "id"
 	IndonesianIndonesia = "id-ID"
 
+	Igbo = "ig"
+
+	Yi = "ii"
+
 	Icelandic        = "is"
 	IcelandicIceland = "is-IS"
 
@@ -153,14 +193,22 @@ const (
 	ItalianSwitzerland = "it-CH"
 	ItalianItaly       = "it-IT"
 
+	Inuktitut = "iu"
+
 	Japanese      = "ja"
 	JapaneseJapan = "ja-JP"
 
 	Georgian        = "ka"
 	GeorgianGeorgia = "ka-GE"
 
+	Kurdi = "kb"
+
 	Kazakh           = "kk"
 	KazakhKazakhstan = "kk-KZ"
+
+	Greenlandic = "kl"
+
+	Khmer = "km"
 
 	Kannada      = "kn"
 	KannadaIndia = "kn-IN"
@@ -174,18 +222,28 @@ const (
 	Kyrgyz           = "ky"
 	KyrgyzKyrgyzstan = "ky-KG"
 
+	Luxembourgish = "lb"
+
+	Lao = "lo"
+
 	Lithuanian          = "lt"
 	LithuanianLithuania = "lt-LT"
 
-	Latvian         = "lv"
-	LatvianLatvia   = "lv-LV"
+	Latvian       = "lv"
+	LatvianLatvia = "lv-LV"
+
+	Maori           = "mi"
 	MaoriNewZealand = "mi-NZ"
 
 	Macedonian                                = "mk"
 	MacedonianFormerYugoslavRepublicMacedonia = "mk-MK"
 
+	Malayalam = "ml"
+
 	Mongolian                 = "mn"
 	MongolianCyrillicMongolia = "mn-MN"
+
+	Mohawk = "moh"
 
 	Marathi      = "mr"
 	MarathiIndia = "mr-IN"
@@ -194,6 +252,7 @@ const (
 	MalayBruneiDarussalam = "ms-BN"
 	MalayMalaysia         = "ms-MY"
 
+	Maltese      = "mt"
 	MalteseMalta = "mt-MT"
 
 	NorwegianNorway = "nb-NO" // Bokmal
@@ -208,19 +267,33 @@ const (
 
 	NorthernSothoSouthAfrica = "ns-ZA"
 
+	Occitan = "oc"
+
+	Odia = "or"
+
 	Punjabi      = "pa"
 	PunjabiIndia = "pa-IN"
 
 	Polish       = "pl"
 	PolishPoland = "pl-PL"
 
+	Dari = "prs"
+
+	Pashto = "ps"
+
 	Portuguese         = "pt"
 	PortugueseBrazil   = "pt-BR"
 	PortuguesePortugal = "pt-PT"
 
+	Quechua = "qu"
+
+	Kiche = "quc"
+
 	QuechuaBolivia = "quz-BO"
 	QuechuaEcuador = "quz-EC"
 	QuechuaPeru    = "quz-PE"
+
+	Romansh = "rm"
 
 	Romanian        = "ro"
 	RomanianRomania = "ro-RO"
@@ -228,18 +301,27 @@ const (
 	Russian       = "ru"
 	RussianRussia = "ru-RU"
 
+	Kinyarwanda = "rw"
+
 	Sanskrit      = "sa"
 	SanskritIndia = "sa-IN"
 
+	Yakut = "sah"
+
+	SamiNorthern        = "se"
 	SamiNorthernFinland = "se-FI"
 	SamiNorthernNorway  = "se-NO"
 	SamiNorthernSweden  = "se-SE"
 
-	Slovak            = "sk"
-	SlovakSlovakia    = "sk-SK"
+	Sinhala = "si"
+
+	Slovak         = "sk"
+	SlovakSlovakia = "sk-SK"
+
 	Slovenian         = "sl"
 	SlovenianSlovenia = "sl-SI"
 
+	SamiSouthern       = "sma"
 	SamiSouthernNorway = "sma-NO"
 	SamiSouthernSweden = "sma-SE"
 	SamiLuleNorway     = "smj-NO"
@@ -260,21 +342,29 @@ const (
 	SwedishFinland = "sv-FI"
 	SwedishSweden  = "sv-SE"
 
+	Sesotho = "st"
+
 	Kiswahili      = "sw"
 	KiswahiliKenya = "sw-KE"
 
 	Syriac      = "syr"
 	SyriacSyria = "syr-SY"
 
-	Tamil      = "ta"
-	TamilIndia = "ta-IN"
+	Tamil         = "ta"
+	TamilIndia    = "ta-IN"
+	TamilSriLanka = "ta-LK"
 
 	Telugu      = "te"
 	TeluguIndia = "te-IN"
 
+	Tajik = "tg"
+
 	Thai         = "th"
 	ThaiThailand = "th-Th"
 
+	Turkmen = "tk"
+
+	Tswana            = "tn"
 	TswanaSouthAfrica = "tn-ZA"
 
 	Turkish       = "tr"
@@ -282,6 +372,10 @@ const (
 
 	Tatar       = "tt"
 	TatarRussia = "tt-RU"
+
+	Tamazight = "tzm"
+
+	Uyghur = "ug"
 
 	Ukrainian        = "uk"
 	UkrainianUkraine = "uk-UA"
@@ -296,6 +390,9 @@ const (
 	Vietnamese        = "vi"
 	VietnameseVietnam = "vi-VN"
 
+	Wolof = "wo"
+
+	Xhosa            = "xh"
 	XhosaSouthAfrica = "xh-ZA"
 
 	ChinesePeoplesRepublicChina = "zh-CN"
@@ -306,5 +403,6 @@ const (
 	ChineseSingapore            = "zh-SG"
 	ChineseTaiwan               = "zh-TW"
 
+	Zulu            = "zu"
 	ZuluSouthAfrica = "zu-ZA"
 )
