@@ -259,7 +259,8 @@ const (
 
 	Burmese = "my"
 
-	NorwegianNorway = "nb-NO" // Bokmal
+	Bokmal       = "nb"
+	BokmalNorway = "nb-NO"
 
 	Nepali = "ne"
 
@@ -267,9 +268,11 @@ const (
 	DutchBelgium     = "nl-BE"
 	DutchNetherlands = "nl-NL"
 
-	//Norwegian, Nynorsk (Norway) = "nn-NO       nn-NO"
+	Nynorsk       = "nn"
+	NynorskNorway = "nn-NO"
 
-	Norwegian = "no          nb-NO"
+	Norwegian       = "no"
+	NorwegianNorway = "no-NO"
 
 	NorthernSotho            = "ns"
 	NorthernSothoSouthAfrica = "ns-ZA"
