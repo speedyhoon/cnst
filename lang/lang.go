@@ -413,14 +413,14 @@ const (
 
 	Yoruba = "yo"
 
-	Chinese                     = "zh"
-	ChinesePeoplesRepublicChina = "zh-CN"
-	ChineseHongKongSAR          = "zh-HK"
-	ChineseSimplified           = "zh-CHS"
-	ChineseTraditional          = "zh-CHT"
-	ChineseMacaoSAR             = "zh-MO"
-	ChineseSingapore            = "zh-SG"
-	ChineseTaiwan               = "zh-TW"
+	Chinese            = "zh"
+	ChineseChina       = "zh-CN"
+	ChineseHongKong    = "zh-HK"
+	ChineseSimplified  = "zh-CHS"
+	ChineseTraditional = "zh-CHT"
+	ChineseMacao       = "zh-MO"
+	ChineseSingapore   = "zh-SG"
+	ChineseTaiwan      = "zh-TW"
 
 	Zulu            = "zu"
 	ZuluSouthAfrica = "zu-ZA"
