@@ -30,6 +30,8 @@ const (
 
 	Assamese = "as" // North-eastern Indian state of Assam.
 
+	Asturian = "ast"
+
 	Azeri                   = "az"
 	AzeriCyrillicAzerbaijan = "az-Cyrl-AZ"
 	AzeriLatinAzerbaijan    = "az-Latn-AZ"
@@ -57,6 +59,8 @@ const (
 	CatalanCatalan = "ca-ES"
 
 	Corsican = "co"
+
+	Coptic = "cop"
 
 	Czech              = "cs"
 	CzechCzechRepublic = "cs-CZ"
@@ -98,6 +102,8 @@ const (
 	EnglishUSA            = "en-US"
 	EnglishSouthAfrica    = "en-ZA"
 	EnglishZimbabwe       = "en-ZW"
+
+	Esperanto = "eo"
 
 	Spanish                  = "es"
 	SpanishArgentina         = "es-AR"
@@ -152,8 +158,12 @@ const (
 
 	ScottishGaelic = "gd"
 
+	Geʽez = "gez" // Ethiopia & Eritrea.
+
 	Galician         = "gl"
 	GalicianGalician = "gl-ES"
+
+	AncientGreek = "grc"
 
 	SwissGerman = "gsw"
 
@@ -180,6 +190,8 @@ const (
 
 	Armenian        = "hy"
 	ArmenianArmenia = "hy-AM"
+
+	Interlingua = "ia"
 
 	Indonesian          = "id"
 	IndonesianIndonesia = "id-ID"
@@ -212,6 +224,8 @@ const (
 
 	Khmer = "km"
 
+	Kurmanji = "kmr"
+
 	Kannada      = "kn"
 	KannadaIndia = "kn-IN"
 
@@ -223,6 +237,8 @@ const (
 
 	Kyrgyz           = "ky"
 	KyrgyzKyrgyzstan = "ky-KG"
+
+	Latin = "la"
 
 	Luxembourgish = "lb"
 
@@ -280,6 +296,8 @@ const (
 	Occitan = "oc"
 
 	Odia = "or"
+
+	Piedmontese = "pms" // Northwest Italy.
 
 	Punjabi      = "pa"
 	PunjabiIndia = "pa-IN"
@@ -377,6 +395,8 @@ const (
 
 	Thai         = "th"
 	ThaiThailand = "th-Th"
+
+	Tigrinya = "ti" // Eritrea & northern Ethiopia.
 
 	Turkmen = "tk"
 
