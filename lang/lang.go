@@ -154,6 +154,8 @@ const (
 
 	Frisian = "fy"
 
+	Friulan = "fur"
+
 	Irish = "ga"
 
 	ScottishGaelic = "gd"
@@ -212,6 +214,8 @@ const (
 	Japanese      = "ja"
 	JapaneseJapan = "ja-JP"
 
+	Yiddish = "ji" // Europe.
+
 	Georgian        = "ka"
 	GeorgianGeorgia = "ka-GE"
 
@@ -234,6 +238,8 @@ const (
 
 	Konkani      = "kok"
 	KonkaniIndia = "kok-IN"
+
+	Kurdish = "ku"
 
 	Kyrgyz           = "ky"
 	KyrgyzKyrgyzstan = "ky-KG"
@@ -406,6 +412,8 @@ const (
 	Turkish       = "tr"
 	TurkishTurkey = "tr-TR"
 
+	Tsonga = "ts" //	Eswatini, Mozambique, South Africa & Zimbabwe.
+
 	Tatar       = "tt"
 	TatarRussia = "tt-RU"
 
@@ -425,6 +433,8 @@ const (
 
 	Vietnamese        = "vi"
 	VietnameseVietnam = "vi-VN"
+
+	Venda = "ve" // South Africa & Zimbabwe.
 
 	Wolof = "wo"
 
