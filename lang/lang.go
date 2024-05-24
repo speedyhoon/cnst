@@ -19,7 +19,9 @@ const (
 	ArabicLebanon     = "ar-LB"
 	ArabicLibya       = "ar-LY"
 	ArabicMorocco     = "ar-MA"
+	ArabicMauritania  = "ar-MR"
 	ArabicOman        = "ar-OM"
+	ArabicPalestine   = "ar-PS"
 	ArabicQatar       = "ar-QA"
 	ArabicSaudiArabia = "ar-SA"
 	ArabicSyria       = "ar-SY"
@@ -330,10 +332,12 @@ const (
 	Romansh = "rm"
 
 	Romanian        = "ro"
+	RomanianMoldova = "ro-MD"
 	RomanianRomania = "ro-RO"
 
-	Russian       = "ru"
-	RussianRussia = "ru-RU"
+	Russian        = "ru"
+	RussianMoldova = "ru-MD"
+	RussianRussia  = "ru-RU"
 
 	Kinyarwanda = "rw"
 
