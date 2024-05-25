@@ -80,8 +80,6 @@ const (
 	GermanLiechtenstein = "de-LI"
 	GermanLuxembourg    = "de-LU"
 
-	LowerSorbian = "dsb" // Lower Lusatia (Germany).
-
 	Divehi         = "dv"
 	DivehiMaldives = "dv-MV"
 
@@ -183,7 +181,6 @@ const (
 	HindiIndia = "hi-IN"
 
 	SerboCroatian = "hrv"
-	UpperSorbian  = "hsb"
 
 	Croatian                  = "hr"
 	CroatianBosniaHerzegovina = "hr-BA"
@@ -345,6 +342,10 @@ const (
 	SanskritIndia = "sa-IN"
 
 	Yakut = "sah"
+
+	Sorbian      = "sb"
+	LowerSorbian = "dsb" // Lower Lusatia (Germany).
+	UpperSorbian = "hsb" // Upper Lusatia (Germany).
 
 	SamiNorthern        = "se"
 	SamiNorthernFinland = "se-FI"
