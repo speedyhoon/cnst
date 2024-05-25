@@ -133,8 +133,8 @@ const (
 	Basque       = "eu"
 	BasqueBasque = "eu-ES"
 
-	Persian     = "fa"
-	PersianIran = "fa-IR"
+	Farsi     = "fa" // Persian.
+	FarsiIran = "fa-IR"
 
 	Filipino = "fil"
 
@@ -186,8 +186,8 @@ const (
 	CroatianBosniaHerzegovina = "hr-BA"
 	CroatianCroatia           = "hr-HR"
 
-	Hungarian        = "hu"
-	HungarianHungary = "hu-HU"
+	Magyar        = "hu" // Hungarian.
+	MagyarHungary = "hu-HU"
 
 	Armenian        = "hy"
 	ArmenianArmenia = "hy-AM"
@@ -280,8 +280,8 @@ const (
 
 	Burmese = "my"
 
-	Bokmal       = "nb"
-	BokmalNorway = "nb-NO"
+	Bokmål       = "nb"
+	BokmålNorway = "nb-NO"
 
 	Nepali = "ne"
 
