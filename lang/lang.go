@@ -1,7 +1,8 @@
+// Package lang provides language constants for use in HTTP headers Accept-Language, Content-Language &
+// HTML global attribute `lang`. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
 package lang
 
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
-// https://gist.github.com/JamieMason/3748498
+// IANA Language Subtag Registry: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 const (
 	Afrikaans            = "af"
 	AfrikaansSouthAfrica = "af-ZA"
@@ -141,7 +142,7 @@ const (
 	Finnish        = "fi"
 	FinnishFinland = "fi-FI"
 
-	Faroese             = "fo"
+	Faroese             = "fo" // Denmark.
 	FaroeseFaroeIslands = "fo-FO"
 
 	French            = "fr"
@@ -156,7 +157,7 @@ const (
 
 	Friulan = "fur"
 
-	Irish = "ga"
+	Irish = "ga" // Gaelic.
 
 	ScottishGaelic = "gd"
 
@@ -261,7 +262,7 @@ const (
 	Macedonian                                = "mk"
 	MacedonianFormerYugoslavRepublicMacedonia = "mk-MK"
 
-	Malayalam = "ml"
+	Malayalam = "ml" // India.
 
 	Mongolian                 = "mn"
 	MongolianCyrillicMongolia = "mn-MN"
@@ -271,7 +272,7 @@ const (
 	Marathi      = "mr"
 	MarathiIndia = "mr-IN"
 
-	Malay                 = "ms"
+	Malay                 = "ms" // Malaysia, Singapore, Brunei, East Timor, Indonesia, Southern Thailand, Christmas Island & Cocos (Keeling) Islands.
 	MalayBruneiDarussalam = "ms-BN"
 	MalayMalaysia         = "ms-MY"
 
@@ -326,7 +327,7 @@ const (
 	QuechuaEcuador = "quz-EC"
 	QuechuaPeru    = "quz-PE"
 
-	Romansh = "rm"
+	Romansh = "rm" // Switzerland.
 
 	Romanian        = "ro"
 	RomanianMoldova = "ro-MD"
@@ -409,7 +410,7 @@ const (
 
 	Tigrinya = "ti" // Eritrea & northern Ethiopia.
 
-	Turkmen = "tk"
+	Turkmen = "tk" // Turkmenistan, Afghanistan, Iran, Uzbekistan, Tajikistan, Turkey & Russia.
 
 	Tswana            = "tn"
 	TswanaSouthAfrica = "tn-ZA"
