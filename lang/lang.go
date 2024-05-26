@@ -353,7 +353,7 @@ const (
 	SamiNorthernNorway  = "se-NO"
 	SamiNorthernSweden  = "se-SE"
 
-	Sinhala = "si"
+	Sinhala = "si" // Sri Lanka.
 
 	Slovak         = "sk"
 	SlovakSlovakia = "sk-SK"
@@ -388,7 +388,7 @@ const (
 	SwedishFinland = "sv-FI"
 	SwedishSweden  = "sv-SE"
 
-	Sesotho = "st"
+	Sotho = "st" // Lesotho, South Africa & Zimbabwe.
 
 	Kiswahili      = "sw"
 	KiswahiliKenya = "sw-KE"
