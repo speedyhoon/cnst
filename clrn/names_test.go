@@ -162,14 +162,14 @@ func TestUnique(t *testing.T) {
 	t.Run("expected quantity", func(t *testing.T) {
 		const expectedQty = 148
 		if qty := len(names); qty != expectedQty {
-			t.Errorf("have %d color names, expected %d\n", qty, expectedQty)
+			t.Errorf("have %d color-names, expected %d\n", qty, expectedQty)
 		}
 	})
 
 	for value, name := range names {
 		t.Run(name, func(t *testing.T) {
 			if expected := strings.ToLower(name); value != expected {
-				t.Errorf("name clrn.%s expected %s, got %s", name, expected, value)
+				t.Errorf("expected color-name `%s`, got `%s`", expected, value)
 			}
 		})
 	}
