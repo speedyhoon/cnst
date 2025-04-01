@@ -1,10 +1,12 @@
 # Go Constants `cnst`
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/speedyhoon/cnst.svg)](https://pkg.go.dev/github.com/speedyhoon/cnst)
 [![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/cnst)](https://goreportcard.com/report/github.com/speedyhoon/cnst)
 
 Go string constants for [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP languages](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry),
 [Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
-and [CSS named-color](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color)
+and [CSS named-colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color).
 
 ## Install:
 
