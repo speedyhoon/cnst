@@ -69,7 +69,7 @@ func main() {
 			// Cache expires in 1 year.
 			w.Header().Set(hdr.CacheControl, cacheControl)
 
-			// Serve file with Brotli compression.
+			// Serve files with Brotli compression.
 			w.Header().Set(hdr.ContentEncoding, cnst.Brotli)
 			http.FileServer(http.Dir(dirCSS)).ServeHTTP(w, r)
 		})
@@ -95,6 +95,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/bits"
 	"net/http"
 	"strconv"
@@ -114,6 +115,15 @@ func main() {
 	)
 	fmt.Println("CPU Word size:", strconv.IntSize, "bits or", bits.UintSize, "bits")
 	fmt.Printf("value: %d, name: %s, type: %[1]T\n", http.StatusTeapot, http.StatusText(http.StatusTeapot))
+	// Math constants.
+	fmt.Println(math.E, math.Pi, math.Phi)
+	fmt.Println(math.Sqrt2, math.SqrtE, math.SqrtPi, math.SqrtPhi)
+	fmt.Println(math.Ln2, math.Log2E, math.Ln10, math.Log10E)
+	fmt.Println(math.MaxFloat32, math.SmallestNonzeroFloat32)
+	fmt.Println(math.MaxFloat64, math.SmallestNonzeroFloat64)
+	fmt.Println(math.MaxInt, math.MaxInt8, math.MaxInt16, math.MaxInt32, math.MaxInt64)
+	fmt.Println(math.MinInt, math.MinInt8, math.MinInt16, math.MinInt32, math.MinInt64)
+	fmt.Println(uint64(math.MaxUint), math.MaxUint8, math.MaxUint16, math.MaxUint32, uint64(math.MaxUint64))
 }
 ```
 Outputs:
@@ -121,4 +131,12 @@ Outputs:
 GET HEAD POST PUT PATCH DELETE CONNECT OPTIONS TRACE
 CPU Word size: 64 bits or 64 bits
 value: 418, name: I'm a teapot, type: int
+2.718281828459045 3.141592653589793 1.618033988749895
+1.4142135623730951 1.6487212707001282 1.772453850905516 1.272019649514069
+0.6931471805599453 1.4426950408889634 2.302585092994046 0.4342944819032518
+3.4028234663852886e+38 1.401298464324817e-45
+1.7976931348623157e+308 5e-324
+9223372036854775807 127 32767 2147483647 9223372036854775807
+-9223372036854775808 -128 -32768 -2147483648 -9223372036854775808
+18446744073709551615 255 65535 4294967295 18446744073709551615
 ```
