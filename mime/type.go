@@ -40,6 +40,7 @@ const (
 	JS     = "text/javascript" + charset
 	JSON   = "application/json"
 	JSONLD = "application/ld+json"
+	MD     = "text/markdown"
 	MID    = "audio/midi"
 	MIDI   = "audio/x-midi"
 	MP3    = "audio/mpeg"

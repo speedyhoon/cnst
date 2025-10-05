@@ -40,6 +40,7 @@ func TestUnique(t *testing.T) {
 		mime.JS:     "text/javascript; charset=utf-8",
 		mime.JSON:   "application/json",
 		mime.JSONLD: "application/ld+json",
+		mime.MD:     "text/markdown",
 		mime.MID:    "audio/midi",
 		mime.MIDI:   "audio/x-midi",
 		mime.MP3:    "audio/mpeg",
@@ -88,7 +89,7 @@ func TestUnique(t *testing.T) {
 	}
 
 	t.Run("expected quantity", func(t *testing.T) {
-		const expectedQty = 76
+		const expectedQty = 77
 		if qty := len(names); qty != expectedQty {
 			t.Errorf("have %d MIME types, expected %d\n", qty, expectedQty)
 		}
