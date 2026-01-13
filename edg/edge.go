@@ -1,4 +1,4 @@
-// Package edg contains constants for how many edges (sides) geometric shapes have.
+// Package edg contains constants for how many edges (sides, vertices, points or corners) geometric shapes have.
 package edg
 
 const (

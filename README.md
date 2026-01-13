@@ -3,11 +3,18 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/speedyhoon/cnst.svg)](https://pkg.go.dev/github.com/speedyhoon/cnst)
 [![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/cnst)](https://goreportcard.com/report/github.com/speedyhoon/cnst)
 
-Go constants for [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
-[HTTP languages](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry),
-[Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types),
-[W3C named-colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and
-how many [edges polygons have](https://en.wikipedia.org/wiki/Polygon#Naming).
+Go constants for:
+
+| Package                                                      | Description                                                                                                   |
+|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| [`clrn`](https://pkg.go.dev/github.com/speedyhoon/cnst/clrn) | [W3C named-colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color)                              |
+| [`edg`](https://pkg.go.dev/github.com/speedyhoon/cnst/edg)   | [How many vertices or edges polygons have](https://en.wikipedia.org/wiki/Polygon#Naming)                      |
+| [`hdr`](https://pkg.go.dev/github.com/speedyhoon/cnst/hdr)   | [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)                                     |
+| [`lang`](https://pkg.go.dev/github.com/speedyhoon/cnst/lang) | [HTTP languages](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry)          |
+| [`mime`](https://pkg.go.dev/github.com/speedyhoon/cnst/mime) | [Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) |
+
+File extension constants are defined in external package [`ext`](https://github.com/speedyhoon/ext) with extra
+functionality.
 
 ## Install:
 
@@ -126,7 +133,9 @@ func main() {
 	fmt.Println(uint64(math.MaxUint), math.MaxUint8, math.MaxUint16, math.MaxUint32, uint64(math.MaxUint64))
 }
 ```
+
 Outputs:
+
 ```
 GET HEAD POST PUT PATCH DELETE CONNECT OPTIONS TRACE
 CPU Word size: 64 bits or 64 bits
