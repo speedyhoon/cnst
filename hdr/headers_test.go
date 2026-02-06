@@ -71,7 +71,7 @@ func TestUnique(t *testing.T) {
 		hdr.ProxyAuthenticate:              "proxy-authenticate",
 		hdr.ProxyAuthorization:             "proxy-authorization",
 		hdr.Range:                          "range",
-		hdr.Referer:                        "referer",
+		hdr.Referrer:                       "referer",
 		hdr.ReferrerPolicy:                 "referrer-policy",
 		hdr.Refresh:                        "refresh",
 		hdr.ReprDigest:                     "repr-digest",

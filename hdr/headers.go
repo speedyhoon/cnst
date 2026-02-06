@@ -67,7 +67,7 @@ const (
 	ProxyAuthenticate              = "proxy-authenticate"
 	ProxyAuthorization             = "proxy-authorization"
 	Range                          = "range"
-	Referer                        = "referer"
+	Referrer                        = "referer"
 	ReferrerPolicy                 = "referrer-policy"
 	Refresh                        = "refresh"
 	ReprDigest                     = "repr-digest"
