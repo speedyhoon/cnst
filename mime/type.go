@@ -6,7 +6,7 @@
 package mime
 
 const (
-	charset = "; charset=utf-8"
+	Charset = "; charset=utf-8"
 
 	A3GP  = "audio/3gpp"
 	V3GP  = "video/3gpp"
@@ -23,7 +23,7 @@ const (
 	BZ     = "application/x-bzip"
 	BZ2    = "application/x-bzip2"
 	CSH    = "application/x-csh"
-	CSS    = "text/css" + charset
+	CSS    = "text/css" + Charset
 	CSV    = "text/csv"
 	DOC    = "application/msword"
 	DOCX   = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
@@ -32,12 +32,12 @@ const (
 	FLAC   = "audio/flac"
 	GZ     = "application/gzip"
 	GIF    = "image/gif"
-	HTML   = "text/html" + charset
+	HTML   = "text/html" + Charset
 	ICO    = "image/vnd.microsoft.icon"
 	ICS    = "text/calendar"
 	JAR    = "application/java-archive"
 	JPG    = "image/jpeg"
-	JS     = "text/javascript" + charset
+	JS     = "text/javascript" + Charset
 	JSON   = "application/json"
 	JSONLD = "application/ld+json"
 	MD     = "text/markdown"
