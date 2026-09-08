@@ -1,7 +1,8 @@
 # Go Constants `cnst`
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/speedyhoon/cnst.svg)](https://pkg.go.dev/github.com/speedyhoon/cnst)
-[![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/cnst)](https://goreportcard.com/report/github.com/speedyhoon/cnst)
+[![Go Report Card](https://raw.githubusercontent.com/speedyhoon/speedyhoon/refs/heads/main/goReport.svg)](https://goreportcard.com/report/github.com/speedyhoon/cnst)
+![license MIT](https://raw.githubusercontent.com/speedyhoon/speedyhoon/refs/heads/main/MIT.svg)
 
 Go constants for:
 
